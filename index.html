@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Favicon lottery</title>
+
+  <!-- favs -->
+  <script type="text/javascript">
+    (function(){
+      var dt = new Date();
+      var timestamp = dt.getTime();
+      var choise = dt.getMinutes() % 3 + 1;
+      var str = '<link rel="apple-touch-icon" sizes="57x57" href="fav'+choise+'/apple-touch-icon-57x57.png?v='+timestamp+'"> <link rel="apple-touch-icon" sizes="60x60" href="fav'+choise+'/apple-touch-icon-60x60.png?v='+timestamp+'"> <link rel="apple-touch-icon" sizes="72x72" href="fav'+choise+'/apple-touch-icon-72x72.png?v='+timestamp+'"> <link rel="apple-touch-icon" sizes="76x76" href="fav'+choise+'/apple-touch-icon-76x76.png?v='+timestamp+'"> <link rel="apple-touch-icon" sizes="114x114" href="fav'+choise+'/apple-touch-icon-114x114.png?v='+timestamp+'"> <link rel="apple-touch-icon" sizes="120x120" href="fav'+choise+'/apple-touch-icon-120x120.png?v='+timestamp+'"> <link rel="apple-touch-icon" sizes="144x144" href="fav'+choise+'/apple-touch-icon-144x144.png?v='+timestamp+'"> <link rel="apple-touch-icon" sizes="152x152" href="fav'+choise+'/apple-touch-icon-152x152.png?v='+timestamp+'"> <link rel="apple-touch-icon" sizes="180x180" href="fav'+choise+'/apple-touch-icon-180x180.png?v='+timestamp+'"> <link rel="icon" type="image/png" href="fav'+choise+'favicon-32x32.png?v='+timestamp+'" sizes="32x32"> <link rel="icon" type="image/png" href="fav'+choise+'/android-chrome-192x192.png?v='+timestamp+'" sizes="192x192"> <link rel="icon" type="image/png" href="fav'+choise+'favicon-96x96.png?v='+timestamp+'" sizes="96x96"> <link rel="icon" type="image/png" href="fav'+choise+'favicon-16x16.png?v='+timestamp+'" sizes="16x16"> <link rel="manifest" href="fav'+choise+'/manifest.json"> <link rel="shortcut icon" href="fav'+choise+'favicon.ico'+timestamp+'"> <meta name="msapplication-TileColor" content="#da532c"> <meta name="msapplication-TileImage" content="fav'+choise+'/mstile-144x144.png?v='+timestamp+'"> <meta name="msapplication-config" content="fav'+choise+'/browserconfig.xml"><meta name="theme-color" content="#ffffff">';
+      document.write(str);
+    })();
+  </script>
+</head>
+
+<body>
+  <p>Фавиконка меняется раз в 3 минуты. Выбор через смену папок fav$ и отмену кэширования запроса.</p>
+</body>
+</html>
